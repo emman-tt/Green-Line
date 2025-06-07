@@ -103,19 +103,20 @@ margin-top: 3em;
     top: 4px;
   
     left: -7em;
-    transform: rotateZ(3deg);
     animation-name: drink;
-    animation-duration: 7s;
+    animation-duration: 2.5s;
     animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
-    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-timing-function: ease;
 animation-fill-mode: forwards;
 }  
  @keyframes drink {
-        0% {transform: rotateZ(-2deg);
-       }
-        50% {transform: rotateZ(-10deg);}
-        100% {transform: translateX(0.1em);}
+       0%{   transform: rotateZ(-8deg);}
+        50% {transform: translateY(-1em);
+        transform: translateX(1em);
+        }
+        100% {transform: rotateZ(-8deg);}
+        
      
         
     }
@@ -129,13 +130,13 @@ animation-fill-mode: forwards;
         
     }
 
-    .cards div:hover {
+    .cards div:hover ,.cards a:hover{
         transform: scale(1.1);
         color: #349e4b;
 background-color: rgb(255, 255, 255);
 font-weight: 600;
     }
-    .cards div {
+    .cards div, .cards a {
         border:  1px solid rgb(255, 255, 255) ;
       background-color:rgba(232, 231, 231, 0.816);
       border-radius: 1.3em;
@@ -289,26 +290,37 @@ font-size: 9pt;
     object-fit: cover;
 }
 
-.header-center div, .header-end div {
+.header-center div, .header-end div,.header-center a,.header-center svg {
     padding-bottom: 0px;
-    padding-right: 2px;
+    padding-right: 5px;
     position: relative;
     
 }
 
-.header-center div::after, .header-end div::after {
+svg {
+    height: 16px;
+    width: 16px;
+    padding-right: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.header-center div::after, .header-end div::after,.header-center a::after,.header-center svg::after {
 
     content: "";
     position: absolute;
     left: 0;
-    bottom:15px;
+    bottom:-4px;
     transform: translateX(-50%);
     height: 3px;
     width: 0%;
     background-color: rgb(255, 255, 255);
     transition: width 0.3s ease-in-out;
 }
-.header-center div:hover::after ,.header-end div:hover::after{
+.header-center div:hover::after ,.header-end div:hover::after,.header-center a:hover::after,.header-center svg:hover::after{
     width: 100%;
     left: 50%;
     transform: translateX(-50%);
