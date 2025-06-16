@@ -443,6 +443,7 @@ width: 16pt;
 
   body {
     width : 100%;
+    
   }
 
   .alternative{
@@ -678,14 +679,18 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   display: none;
 } */ 
 
-
-
-
 }
 
 @media screen  and (max-width: 420px) and (min-width: 370px)  {
 
- 
+ footer {
+  width: 100%;
+  margin-right: 0;
+ }
+
+ html {
+  width: 100%;
+ }
     body {
         width: 100%;
         margin-left: 0;
@@ -695,6 +700,8 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         grid-template-columns: repeat(auto-fit,minmax(300px,1fr ));
         margin-left: 3em;
         gap: 3em;
+    padding-right: 0;
+    margin-right: 0;
        
     }
     .cards{
@@ -712,6 +719,86 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
    header {
     width: 100%;
+    margin-right: 0;
+    padding-right: 0;
+  
+   }
+
+   .alternative svg {
+    padding: 0;
+margin: 0;
+height: 16pt;
+width: 16pt;
+   }
+    .info1{
+        width: 100%;
+     justify-content: end;
+     align-items: flex-end;
+        margin-right: 0;
+        font-size: 30px;
+    }
+    
+    .info {
+        width: 90%;
+    }
+
+    .options {
+       display: none;
+    }
+    
+    .Logo {
+        font-size: 25pt;
+        padding-top: 0.5em;
+        width: 6em;
+    }
+}
+
+@media screen  and (max-width: 400px) and (min-width: 370px)  {
+
+footer {
+  position:static;
+  bottom: 0;
+ margin-top: 3em;
+}
+
+ html {
+  width: 100%;
+ }
+
+
+  body{
+    width: 100%;
+    overflow-y: hidden;
+   height: auto;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+    .product-container{
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr ));
+        margin-left: 1em;
+        gap: 3em;
+    padding-right: 0;
+    margin-right: 0;
+       
+    }
+    .cards{
+        margin-left: 1.5em;
+    }
+
+   .alternative {
+    font-size: 14px;
+    display: flex;
+    gap: 10px;
+    padding-top: 2em;
+    margin-left: 0em;
+    width: 52%;
+   } 
+
+   header {
+    width: 100%;
+    margin-right: 0;
+    padding-right: 0;
   
    }
 
@@ -746,13 +833,20 @@ width: 16pt;
 
 @media screen and   (max-width: 368px) {
 
+header {
+  margin-right: 0;
+  padding-right: 0;
+}
 
+footer {
+  position:static;
+  bottom: 0;
+}
 
-
-body{
+ body{
     width: 100%;
     overflow-y: hidden;
-   height: 470vh;
+   height: auto;
     margin-left: 0;
     margin-top: 0;
 }
@@ -778,41 +872,32 @@ body{
 
     .cart{
       right: 0;
-   
     }
 
-    .Logo {
-    
+    .Logo {    
       padding-bottom: 0;
       margin-right: 0;
       margin-top: 5pt;
-      
     }
 
 
     .alternative {
-      width: 60%;
-      margin-right: 0.4em;
-     
- 
+      width: 50%;
+      margin-right: 2em;
+     display: flex;
+     font-size: 5pt;
+     margin-top: 3em;
     }
 
-
-
-    footer{
-        margin-top: 0;
-        flex-direction: column;
-        gap: 20px;
-        padding-top: 0;
-        margin-bottom: 0em;
-        padding-top: 5em;
+    .alternative svg {
+      height: 15px;
+      width: 15px;
     }
+
 
     main {
-        margin-bottom: 1em;
+        margin-bottom: 10em;
         padding-bottom: 0;
-        height: 300vh;
-       
     }
 
     .added{
