@@ -1,13 +1,21 @@
-html {
+html  {
     overflow-x: hidden;
     width: 100%;
-
+    height: 100%;
+   
 }
+
+body{
+    overflow-x: hidden;
+   
+}
+
+
 
 header {
     display: flex;
 flex-direction: row;
-justify-content: flex-end;
+justify-content: space-between;
 font-size: 8pt;
 margin-top: 0em;
 gap: 25em;
@@ -21,10 +29,10 @@ background: linear-gradient(to bottom, rgba(0, 0, 0, 0.459) ,rgb(138, 141, 232))
 }
 
 
-
 .header-start , .header-center , .header-end {
     display: flex;
    gap: 8px;
+
 }
 
 
@@ -33,22 +41,22 @@ span {
     font-size: 25pt;
     color: rgb(255, 255, 255);
   margin-left: 1em;
-  
 }
 
+
 .header-start{
-position: absolute;
+position: static;
 font-size: 25pt;
+font-weight: 600;
 left: 0;
-top: 0.9px;
+top: 0px;
 
 color: rgb(82, 255, 197);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
 }
-
+/* 
 .header-start  {
-   
+   0
     font-weight: 600;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -65,7 +73,7 @@ color: rgb(82, 255, 197);
         100% {display: block;
             transform: rotateZ(5deg);}
     
-}
+} */
 
 .header-center {
     gap: 60px;
@@ -196,7 +204,7 @@ font-weight: 600;
         border-top-right-radius: 5em;
         justify-content: center;
           position: relative;
-       
+      
        
    
     }
@@ -216,9 +224,7 @@ font-weight: 600;
     .slider {
     display: flex;
     width: 300%; /* To accommodate two slides groups side by side */
-    animation: scrollLeft 79s linear infinite;
-    scroll-behavior: smooth;
-
+    animation: scrollLeft 209s linear infinite;
     margin-bottom: 7em;
 }
 
@@ -232,12 +238,12 @@ font-weight: 600;
 }
 
 .fade-left {
-    left: -35em;
+    left: 0em;
     background: linear-gradient(to right,rgb(255, 255, 255),transparent);
 }
 
 .fade-right{
-    right: -6em;
+    right: 0em;
     background: linear-gradient(to left,rgb(255, 255, 255),transparent);
 }
     .slides {
@@ -743,6 +749,10 @@ transform: translateX(0) translateY(-2em);
         display: flex;
     }
 
+    .fade-left,.fade-right {
+        display: none;
+    }
+
     .review-cards {
         width: 20em;
         height: auto;
@@ -856,6 +866,10 @@ main {
         gap: 1em;
         margin-top: 3em;
 
+    }
+
+     .fade-left,.fade-right {
+        display: none;
     }
 
     .circle,.circle1,.circle2 {
@@ -1010,6 +1024,10 @@ main {
 
     .leftSide{
         height: 100%;
+    }
+
+     .fade-left,.fade-right {
+        display: none;
     }
 
     .circle {
@@ -1453,6 +1471,7 @@ header{font-size: 30pt;}
     gap: 2em;
     height: auto;
     padding: 2em;
+    padding-bottom: 0;
   }
 
   .cards{
@@ -1481,9 +1500,8 @@ header{font-size: 30pt;}
 
   .header-start {
     font-size: 20pt;
-    position: fixed;
-    margin-bottom: 1em;
-    
+    margin-bottom: 0em;
+   
   }
 
   span {
