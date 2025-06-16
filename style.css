@@ -637,7 +637,7 @@ color: rgba(15, 12, 12, 0.522);
   }
 
 
- @media  (min-width:300px)  and (max-width: 350px) {
+ @media  (min-width:300px)  and (max-width: 361px) {
 
 
       .header-center{
@@ -826,9 +826,42 @@ main {
     margin-top: 5em;
 }
 
+.header-start{
+        margin: 0;
+        padding: 0;
+       width: 50%;
+       align-self: center;
+       
+    }
+
+    .header-end {
+        display: none;
+    }
+
+
+      .alternative {
+      width: 50%;
+      margin-right: 2em;
+     display: flex;
+     font-size: 10pt;
+    align-self: center;
+    gap: 2px;
+    }
+
+    .alternative svg {
+      height: 15px;
+      width: 15px;
+    }
+    header {
+        margin: 0;
+        padding: 0;
+        gap: 4em;
+        
+    }
+
 
  }
- @media  (min-width:350px)  and (max-width: 395px) {
+ @media  (min-width:362px)  and (max-width: 395px) {
 
         .header-center{
         display: none;
@@ -837,11 +870,33 @@ main {
     .header-start{
         margin: 0;
         padding: 0;
+       width: 50%;
+       align-self: center;
        
+    }
+
+    .header-end {
+        display: none;
+    }
+
+
+      .alternative {
+      width: 50%;
+      margin-right: 2em;
+     display: flex;
+     font-size: 10pt;
+    align-self: center;
+    gap: 2px;
+    }
+
+    .alternative svg {
+      height: 15px;
+      width: 15px;
     }
     header {
         margin: 0;
         padding: 0;
+        gap: 4em;
         
     }
 
@@ -893,8 +948,21 @@ main {
     .circle2{
         margin-left: 3em;
     }
+    
     .circle img{
      transform: translateX(0) translateY(-2.4em) rotateZ(35deg);
+     margin-right: 0;
+     padding-right: 0;
+    }
+
+    .circle1 img{
+     transform: translateX(0) translateY(-2.4em) rotateZ(15deg);
+     margin-right: 0;
+     padding-right: 0;
+    }
+
+    .circle2 img{
+     transform: translateX(0) translateY(-2.4em) rotateZ(-35deg);
      margin-right: 0;
      padding-right: 0;
     }
@@ -920,7 +988,7 @@ transform: translateX(0) translateY(-2em);
         height: 5em;
         width: 3em;
       justify-self: center;
-        align-self: center;
+     
         display: flex;
     }
 
@@ -1113,6 +1181,39 @@ transform: translateX(0) translateY(-2em);
     height: 30em;
     width: 100%;
 }
+
+
+    .header-start{
+        margin: 0;
+        padding: 0;
+       width: 50%;
+       
+    }
+
+    .header-end {
+        display: none;
+    }
+
+
+      .alternative {
+      width: 50%;
+      margin-right: 2em;
+     display: flex;
+     font-size: 10pt;
+    align-self: center;
+    gap: 2px;
+    }
+
+    .alternative svg {
+      height: 15px;
+      width: 15px;
+    }
+    header {
+        margin: 0;
+        padding: 0;
+        gap: 4em;
+        
+    }
 
   }
 
