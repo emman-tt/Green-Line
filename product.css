@@ -397,7 +397,9 @@ width: 16pt;
 
   footer {
     margin-left: 0;
-
+position: relative;
+bottom: 0;
+margin-top: 5em;
   }
 
  @keyframes added {
@@ -418,6 +420,35 @@ width: 16pt;
  }
 
 
+ @media only screen and (max-width: 1700px) and (min-width: 1500px){
+  
+.product-container {
+  margin-left: 0em;
+}
+
+  
+  
+  .alternative{
+    display: none;
+  }
+
+ footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+ }
+
+   .Logo{
+    width: 50%;
+  }
+
+  header {
+    justify-content: space-around;
+    flex-direction: row;
+    margin-right: 0em;
+   
+  }
+ }
  @media only screen and (max-width: 1500px) and (min-width: 1400px){
   
 
@@ -538,6 +569,7 @@ body {
 
 footer {
   margin-right: 0;
+  
 }
 
 header {

@@ -1217,7 +1217,7 @@ transform: translateX(0) translateY(-2em);
 
   }
 
-  @media (min-width:1300px) and (max-width: 1500px ) {
+  @media (min-width:1300px) and (max-width: 1700px ) {
   .info{
   left: 45em;
   width: 28em;
@@ -1338,6 +1338,10 @@ transform: translateX(0) translateY(-2em);
     .spline-container{
         height: 800px;
     }
+
+    .alternative{
+    display: none;
+}
   }
 
   @media (min-width:1000px) and (max-width: 1260px ) {
@@ -1445,6 +1449,10 @@ transform: translateX(0) translateY(-2em);
         gap: 13em;
     }
     header{font-size: 7pt;}
+
+    .alternative{
+    display: none;
+}
   }
 
   @media (min-width:2000px) and (max-width: 2560px ) {
@@ -1562,9 +1570,13 @@ header{font-size: 30pt;}
 .info :first-child,.info2 :first-child{
     font-size: 40pt;
 }
+
+.alternative{
+    display: none;
+}
   }
 
-  @media (max-width: 800px) and (min-width: 440px ){
+  @media (max-width: 840px) and (min-width: 440px ){
 
   header {
     flex-direction: row;
@@ -1656,6 +1668,9 @@ header{font-size: 30pt;}
 .spline-container{
     height: 700px;
 }
+.alternative{
+    display: none;
+}
 
 
 
@@ -1678,6 +1693,10 @@ header{font-size: 30pt;}
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* more columns for large screen */
     gap: 30px; /* add some space between grid items */
+  }
+
+  .alternative{
+    display: none;
   }
 }
 
