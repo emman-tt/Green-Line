@@ -1,7 +1,6 @@
 html {
     overflow-x: hidden;
     width: 100%;
-   
 }
 
 header {
@@ -25,7 +24,9 @@ header :nth-child(4){
     margin-left: 4em;
 }
 
-
+ body {
+ overflow: hidden;
+ }
 
 .options {
     display: flex;
@@ -867,8 +868,8 @@ footer {
         gap: 3em;
     padding-right: 0;
     margin-right: 0;
-       
     }
+
     .cards{
         margin-left: 1.5em;
     }
