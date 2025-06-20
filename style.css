@@ -920,7 +920,15 @@ main {
         padding-left: 0;
         gap: 1em;
         margin-top: 3em;
+     
 
+    }
+
+    .cards div, .cards a {
+        border: none;
+        box-shadow: -1px -2px -1px rgb(76, 76, 77);
+        background-color: rgba(184, 170, 255, 0.726);
+        color: hwb(0 0% 100%);
     }
 
      .fade-left,.fade-right {
