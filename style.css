@@ -950,19 +950,19 @@ main {
     }
     
     .circle img{
-     transform: translateX(0) translateY(-2.4em) rotateZ(35deg);
+     transform: translateX(-40%) translateY(-2.4em) rotateZ(35deg);
      margin-right: 0;
      padding-right: 0;
     }
 
     .circle1 img{
-     transform: translateX(0) translateY(-2.4em) rotateZ(15deg);
+     transform: translateX(-40%) translateY(-2.4em) rotateZ(15deg);
      margin-right: 0;
      padding-right: 0;
     }
 
     .circle2 img{
-     transform: translateX(0) translateY(-2.4em) rotateZ(-35deg);
+     transform: translateX(-40%) translateY(-2.4em) rotateZ(-35deg);
      margin-right: 0;
      padding-right: 0;
     }
@@ -981,15 +981,14 @@ main {
     }
 
     .circle img:hover,.circle1 img:hover, .circle2 img:hover {
-transform: translateX(0) translateY(-2em);
+transform: translateX(-40%) translateY(-2em);
     }
 
     .circle img,.circle1 img ,.circle2 img {
         height: 5em;
         width: 3em;
-      justify-self: center;
-     
         display: flex;
+     
     }
 
     .review-cards {
@@ -1028,7 +1027,9 @@ transform: translateX(0) translateY(-2em);
   
     }
     
+    
     .spline-container spline-viewer {
+  display: none;
   width: 10%;
   height: 5em;
   pointer-events: none; /* Optional: disables interaction */

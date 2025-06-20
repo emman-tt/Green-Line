@@ -174,7 +174,7 @@ footer {
    padding-top: 1em;
    background: linear-gradient(to right, rgba(71, 184, 92, 0.881) ,rgb(169, 172, 255));
    color: aliceblue;
-   margin-top: 0em;
+   margin-top: 5em;
   
 }
 footer div {
@@ -396,12 +396,12 @@ width: 16pt;
   }
 
 
-  footer {
+  /* footer {
     margin-left: 0;
 position: relative;
 bottom: 0;
 margin-top: 5em;
-  }
+  } */
 
  @keyframes added {
     0% {
@@ -728,10 +728,13 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  footer {
   width: 100%;
   margin-right: 0;
+  position: relative;
+ margin-top: 0em;
  }
 
  html {
   width: 100%;
+ 
  }
     body {
         width: 100%;
