@@ -754,12 +754,12 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 
    .alternative {
-    font-size: 14px;
+    font-size: 10px;
     display: flex;
     gap: 10px;
     padding-top: 2em;
     margin-left: 0em;
-    width: 52%;
+    width: 12%;
    } 
 
    header {
